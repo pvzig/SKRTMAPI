@@ -3,10 +3,7 @@ import PackageDescription
 let package = Package(
     name: "SKRTMAPI",
     targets: [
-        Target(name: "SKRTMAPI", dependencies: [
-            "SKCore",
-            "SKWebAPI"
-        ])
+        Target(name: "SKRTMAPI")
     ],
     dependencies: [
         .Package(url: "https://github.com/SlackKit/SKCore", "4.0.0"),
