@@ -21,6 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if os(Linux)
 import Foundation
 import SKCore
 import WebSocketClient
@@ -73,3 +74,4 @@ public class ZewoRTM: RTMWebSocket {
         self.webSocket = webSocket
     }
 }
+#endif
