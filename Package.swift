@@ -7,12 +7,14 @@ let package = Package(
     ],
     dependencies: [
         .Package(url: "https://github.com/SlackKit/SKCore", "4.0.0"),
-        .Package(url: "https://github.com/SlackKit/SKWebAPI", "4.0.0"),
-        .Package(url: "https://github.com/Zewo/WebSocketClient", majorVersion: 0)
+        .Package(url: "https://github.com/SlackKit/SKWebAPI", "4.0.0")
     ]
 )
 
+var dependency: Package.Dependency
 #if os(macOS) || os(iOS) || os(tvOS)
-let dependency: Package.Dependency = .Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2)
-package.dependencies.append(dependency)
+dependency = .Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2)
+#else
+dependency = .Package(url: "https://github.com/Zewo/WebSocketClient", majorVersion: 0)
 #endif
+package.dependencies.append(dependency)
