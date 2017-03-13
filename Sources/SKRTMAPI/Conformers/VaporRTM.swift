@@ -1,5 +1,5 @@
 //
-//  ZewoRTM.swift
+//  VaporRTM.swift
 //
 // Copyright © 2017 Peter Zignego. All rights reserved.
 //
@@ -24,25 +24,33 @@
 #if os(Linux)
 import Foundation
 import SKCore
-import WebSocketClient
+import WebSockets
 
-public class ZewoRTM: RTMWebSocket {
+public class VaporRTM: RTMWebSocket {
     
     public var delegate: RTMDelegate?
-    internal var client: WebSocketClient?
     internal var webSocket: WebSocket?
-    
-    public required init() {}
 
+    public required init() {}
+    
     //MARK: - RTM
     public func connect(url: URL) {
         do {
-            self.client = try WebSocketClient(url: url, didConnect: { (webSocket) in
-                self.setupSocket(webSocket)
-            })
-            try self.client?.connect()
+            try WebSocket.connect(to: url.absoluteString) { ws in
+                self.webSocket = ws
+                self.delegate?.didConnect()
+
+                ws.onText = { ws, text in
+                    print(text)
+                    self.delegate?.receivedMessage(text)
+                }
+                
+                ws.onClose = { _, code, reason, clean in
+                    self.delegate?.disconnected()
+                }
+            }
         } catch let error {
-            print("WebSocket client could not connect: \(error)")
+            print("Websocket failed to connect with error: \(error)")
         }
     }
     
@@ -59,19 +67,6 @@ public class ZewoRTM: RTMWebSocket {
         } catch let error {
             throw error
         }
-    }
-    
-    // MARK: - WebSocket
-    private func setupSocket(_ webSocket: WebSocket) {
-        webSocket.onText { (message) in
-            self.delegate?.receivedMessage(message)
-        }
-        webSocket.onClose { (code: CloseCode?, reason: String?) in
-            self.delegate?.disconnected()
-        }
-        webSocket.onPing { (data) in try webSocket.pong() }
-        webSocket.onPong { (data) in try webSocket.ping() }
-        self.webSocket = webSocket
     }
 }
 #endif

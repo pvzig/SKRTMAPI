@@ -15,6 +15,6 @@ var dependency: Package.Dependency
 #if os(macOS) || os(iOS) || os(tvOS)
 dependency = .Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2)
 #else
-dependency = .Package(url: "https://github.com/Zewo/WebSocketClient", majorVersion: 0)
+dependency = .Package(url: "https://github.com/vapor/engine", majorVersion: 1)
 #endif
 package.dependencies.append(dependency)
