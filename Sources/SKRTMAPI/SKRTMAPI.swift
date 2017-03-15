@@ -25,8 +25,8 @@
 import Dispatch
 #endif
 import Foundation
-import SKCore
 import SKWebAPI
+@_exported import SKCore
 
 public protocol RTMWebSocket {
     init()
