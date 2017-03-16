@@ -36,19 +36,18 @@ public class VaporRTM: RTMWebSocket {
     //MARK: - RTM
     public func connect(url: URL) {
         do {
-            try WebSocket.connect(to: url.absoluteString) { ws in
+            try WebSocket.background(to: url.absoluteString, onConnect: { ws in
                 self.webSocket = ws
                 self.delegate?.didConnect()
 
                 ws.onText = { ws, text in
-                    print(text)
                     self.delegate?.receivedMessage(text)
                 }
                 
                 ws.onClose = { _, code, reason, clean in
                     self.delegate?.disconnected()
                 }
-            }
+            })
         } catch let error {
             print("Websocket failed to connect with error: \(error)")
         }

@@ -71,7 +71,6 @@ public final class SKRTMAPI: RTMDelegate {
             #endif
         }
         self.rtm.delegate = self
-        self.connect()
     }
     
     public func connect() {
