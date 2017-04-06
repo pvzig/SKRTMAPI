@@ -24,11 +24,12 @@
 #if os(Linux)
 import Foundation
 import SKCore
-import WebSockets
+import Prorsum
 
-public class VaporRTM: RTMWebSocket {
+public class ProrsumRTM: RTMWebSocket {
     
     public var delegate: RTMDelegate?
+    internal var client: WebSocketClient?
     internal var webSocket: WebSocket?
 
     public required init() {}
@@ -36,18 +37,17 @@ public class VaporRTM: RTMWebSocket {
     //MARK: - RTM
     public func connect(url: URL) {
         do {
-            try WebSocket.background(to: url.absoluteString, onConnect: { ws in
-                self.webSocket = ws
+            client = try WebSocketClient(url: url, didConnect: { socket in
+                self.webSocket = socket
                 self.delegate?.didConnect()
-
-                ws.onText = { ws, text in
+                socket.onText({ text in
                     self.delegate?.receivedMessage(text)
-                }
-                
-                ws.onClose = { _, code, reason, clean in
+                })
+                socket.onClose({ (_, _) in
                     self.delegate?.disconnected()
-                }
+                })
             })
+            try client?.connect()
         } catch let error {
             print("Websocket failed to connect with error: \(error)")
         }

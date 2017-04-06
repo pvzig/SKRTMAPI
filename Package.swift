@@ -15,6 +15,6 @@ var dependency: Package.Dependency
 #if os(macOS) || os(iOS) || os(tvOS)
 dependency = .Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2)
 #else
-dependency = .Package(url: "https://github.com/vapor/engine", majorVersion: 1)
+dependency = .Package(url: "https://github.com/noppoMan/Prorsum.git", "0.1.12")
 #endif
 package.dependencies.append(dependency)
