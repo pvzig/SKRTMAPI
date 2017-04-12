@@ -38,6 +38,7 @@ public class ZewoRTM: RTMWebSocket {
     public func connect(url: URL) {
         do {
             self.client = try WebSocketClient(url: url, didConnect: { (webSocket) in
+                self.delegate?.didConnect()
                 self.setupSocket(webSocket)
             })
             try self.client?.connect()
