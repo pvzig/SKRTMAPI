@@ -70,6 +70,7 @@ Initialize an instance of `SKRTMAPI` with a Slack auth token:
 
 ```swift
 let rtm = SKRTMAPI(token: "xoxb-SLACK_AUTH_TOKEN")
+rtm.connect()
 ```
 
 Customize the connection with `RTMOptions`:
