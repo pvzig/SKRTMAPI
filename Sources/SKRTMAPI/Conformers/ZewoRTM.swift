@@ -29,21 +29,22 @@ import WebSocketClient
 public class ZewoRTM: RTMWebSocket {
     
     public var delegate: RTMDelegate?
-    internal var client: WebSocketClient?
-    internal var webSocket: WebSocket?
+    var webSocket: WebSocket?
+    let queue = DispatchQueue(label: "com.launchsoft.slackkit")
     
     public required init() {}
     
     //MARK: - RTM
     public func connect(url: URL) {
-        do {
-            self.client = try WebSocketClient(url: url, didConnect: { (webSocket) in
-                self.delegate?.didConnect()
-                self.setupSocket(webSocket)
-            })
-            try self.client?.connect()
-        } catch let error {
-            print("WebSocket client could not connect: \(error)")
+        queue.async {
+            do {
+                try WebSocketClient(url: url, didConnect: { (webSocket) in
+                    self.delegate?.didConnect()
+                    self.setupSocket(webSocket)
+                }).connect()
+            } catch let error {
+                print("WebSocket client could not connect: \(error)")
+            }
         }
     }
     
