@@ -22,6 +22,7 @@
 // THE SOFTWARE.
 
 #if os(Linux)
+import Dispatch
 import Foundation
 import SKCore
 import WebSocketClient
