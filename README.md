@@ -70,6 +70,7 @@ Initialize an instance of `SKRTMAPI` with a Slack auth token:
 
 ```swift
 let rtm = SKRTMAPI(token: "xoxb-SLACK_AUTH_TOKEN")
+rtm.connect()
 ```
 
 Customize the connection with `RTMOptions`:
@@ -77,6 +78,7 @@ Customize the connection with `RTMOptions`:
 ```swift
 let options = RTMOptions(simpleLatest: false, noUnreads: false, mpimAware: true, pingInterval: 30, timeout: 300, reconnect: true)
 let rtm = SKRTMAPI(token: "xoxb-SLACK_AUTH_TOKEN", options: options)
+rtm.connect()
 ```
 
 Provide your own web socket implementation by conforming to `RTMWebSocket`:
@@ -94,4 +96,5 @@ public protocol RTMWebSocket {
 ```swift
 let rtmWebSocket = YourRTMWebSocket()
 let rtm = SKRTMAPI(token: "xoxb-SLACK_AUTH_TOKEN", rtm: rtmWebSocket)
+rtm.connect()
 ```
