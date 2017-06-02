@@ -1,5 +1,5 @@
 # SKRTMAPI: SlackKit RTM Module
-![Swift Version](https://img.shields.io/badge/Swift-3.0.2-orange.svg)
+![Swift Version](https://img.shields.io/badge/Swift-3.1.1-orange.svg)
 ![Plaforms](https://img.shields.io/badge/Platforms-macOS,iOS,tvOS,Linux-lightgrey.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
@@ -7,9 +7,6 @@
 [![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-brightgreen.svg)](https://cocoapods.org)
 
 A module for connecting to the [Slack Real Time Messaging API](https://api.slack.com/rtm).
-
-### Swift 3.1 Notice (4/12/17)
-Due to a `Base64Encoding` bug in Swift 3.1 on Linux, SKRTMAPI is not compatible with Swift 3.1 at this time.
 
 ## Installation
 
