@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26D1C4CD1EE4653600C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CA1EE4653600C95954 /* SKCore.framework */; };
+		26D1C4CE1EE4653600C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CB1EE4653600C95954 /* SKWebAPI.framework */; };
+		26D1C4CF1EE4653600C95954 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CC1EE4653600C95954 /* Starscream.framework */; };
+		26D1C4D31EE4654800C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D01EE4654800C95954 /* SKCore.framework */; };
+		26D1C4D41EE4654800C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D11EE4654800C95954 /* SKWebAPI.framework */; };
+		26D1C4D51EE4654800C95954 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D21EE4654800C95954 /* Starscream.framework */; };
+		26D1C4D91EE4655100C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D61EE4655100C95954 /* SKCore.framework */; };
+		26D1C4DA1EE4655100C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D71EE4655100C95954 /* SKWebAPI.framework */; };
+		26D1C4DB1EE4655100C95954 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D81EE4655100C95954 /* Starscream.framework */; };
 		26DC0EB31E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
 		26DC0EB41E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
 		26DC0EB51E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
@@ -23,6 +32,15 @@
 		2684F1E41E95ABD400536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F2081E95ABD600536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F20D1E95AF8C00536DCC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26D1C4CA1EE4653600C95954 /* SKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKCore.framework; path = Carthage/Build/Mac/SKCore.framework; sourceTree = "<group>"; };
+		26D1C4CB1EE4653600C95954 /* SKWebAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKWebAPI.framework; path = Carthage/Build/Mac/SKWebAPI.framework; sourceTree = "<group>"; };
+		26D1C4CC1EE4653600C95954 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/Mac/Starscream.framework; sourceTree = "<group>"; };
+		26D1C4D01EE4654800C95954 /* SKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKCore.framework; path = Carthage/Build/iOS/SKCore.framework; sourceTree = "<group>"; };
+		26D1C4D11EE4654800C95954 /* SKWebAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKWebAPI.framework; path = Carthage/Build/iOS/SKWebAPI.framework; sourceTree = "<group>"; };
+		26D1C4D21EE4654800C95954 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		26D1C4D61EE4655100C95954 /* SKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKCore.framework; path = Carthage/Build/tvOS/SKCore.framework; sourceTree = "<group>"; };
+		26D1C4D71EE4655100C95954 /* SKWebAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKWebAPI.framework; path = Carthage/Build/tvOS/SKWebAPI.framework; sourceTree = "<group>"; };
+		26D1C4D81EE4655100C95954 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/tvOS/Starscream.framework; sourceTree = "<group>"; };
 		26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarscreamRTM.swift; sourceTree = "<group>"; };
 		26DC0EB11E95BED900991BDF /* ZewoRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZewoRTM.swift; sourceTree = "<group>"; };
 		26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRTMAPI.swift; sourceTree = "<group>"; };
@@ -33,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D1C4CD1EE4653600C95954 /* SKCore.framework in Frameworks */,
+				26D1C4CE1EE4653600C95954 /* SKWebAPI.framework in Frameworks */,
+				26D1C4CF1EE4653600C95954 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D1C4D31EE4654800C95954 /* SKCore.framework in Frameworks */,
+				26D1C4D41EE4654800C95954 /* SKWebAPI.framework in Frameworks */,
+				26D1C4D51EE4654800C95954 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D1C4D91EE4655100C95954 /* SKCore.framework in Frameworks */,
+				26D1C4DA1EE4655100C95954 /* SKWebAPI.framework in Frameworks */,
+				26D1C4DB1EE4655100C95954 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +85,7 @@
 			children = (
 				2684F17F1E95AA6900536DCC /* SKRTMAPI */,
 				2684F17E1E95AA6900536DCC /* Products */,
+				26D1C4C91EE4653500C95954 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +116,22 @@
 			);
 			path = "Supporting Files";
 			sourceTree = SOURCE_ROOT;
+		};
+		26D1C4C91EE4653500C95954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26D1C4D61EE4655100C95954 /* SKCore.framework */,
+				26D1C4D71EE4655100C95954 /* SKWebAPI.framework */,
+				26D1C4D81EE4655100C95954 /* Starscream.framework */,
+				26D1C4D01EE4654800C95954 /* SKCore.framework */,
+				26D1C4D11EE4654800C95954 /* SKWebAPI.framework */,
+				26D1C4D21EE4654800C95954 /* Starscream.framework */,
+				26D1C4CA1EE4653600C95954 /* SKCore.framework */,
+				26D1C4CB1EE4653600C95954 /* SKWebAPI.framework */,
+				26D1C4CC1EE4653600C95954 /* Starscream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
 		26DC0EAD1E95BED900991BDF /* Sources */ = {
 			isa = PBXGroup;
@@ -402,6 +446,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -425,6 +473,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -448,6 +500,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -471,6 +527,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -494,6 +554,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -517,6 +581,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
