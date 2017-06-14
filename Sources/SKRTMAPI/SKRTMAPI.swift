@@ -94,25 +94,38 @@ public final class SKRTMAPI: RTMDelegate {
         rtm.disconnect()
     }
 
-    public func sendMessage(_ message: String, channelID: String, threadTs: String? = nil) throws {
+    public func sendMessage(_ message: String, channelID: String) throws {
         guard connected else {
             throw SlackError.rtmConnectionError
         }
         do {
-            let string = try format(message: message, channel: channelID, threadTs: threadTs)
+            let string = try format(message: message, channel: channelID)
             try rtm.sendMessage(string)
         } catch let error {
             throw error
         }
     }
 
-    private func format(message: String, channel: String, threadTs: String?) throws -> String {
+    public func sendThreadedMessage(_ message: String, channelID: String, threadTs: String, broadcastReply: Bool = false) throws {
+        guard connected else {
+            throw SlackError.rtmConnectionError
+        }
+        do {
+            let string = try format(message: message, channel: channelID, threadTs: threadTs, broadcastReply: broadcastReply)
+            try rtm.sendMessage(string)
+        } catch let error {
+            throw error
+        }
+    }
+
+    private func format(message: String, channel: String, threadTs: String? = nil, broadcastReply: Bool = false) throws -> String {
         let json: [String: Any?] = [
             "id": Date().slackTimestamp,
             "type": "message",
             "channel": channel,
             "text": message.slackFormatEscaping,
-            "thread_ts": threadTs
+            "thread_ts": threadTs,
+            "broadcastReply": broadcastReply
         ]
         guard
             let data = try? JSONSerialization.data(withJSONObject: filterNilParameters(json), options: []),
