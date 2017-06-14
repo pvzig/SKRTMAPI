@@ -41,14 +41,14 @@ public protocol RTMAdapter: class {
     func notificationForEvent(_ event: Event, type: EventType, instance: SKRTMAPI)
 }
 
-public protocol RTMDelegate {
+public protocol RTMDelegate: class {
     func didConnect()
     func disconnected()
     func receivedMessage(_ message: String)
 }
 
 public final class SKRTMAPI: RTMDelegate {
-    
+
     public var rtm: RTMWebSocket
     public var adapter: RTMAdapter?
     public var token = "xoxp-SLACK_AUTH_TOKEN"
@@ -57,7 +57,7 @@ public final class SKRTMAPI: RTMDelegate {
 
     var ping: Double?
     var pong: Double?
-    
+
     public init(withAPIToken token: String, options: RTMOptions = RTMOptions(), rtm: RTMWebSocket? = nil) {
         self.token = token
         self.options = options
@@ -72,9 +72,14 @@ public final class SKRTMAPI: RTMDelegate {
         }
         self.rtm.delegate = self
     }
-    
+
     public func connect() {
-        WebAPI.rtmStart(token: token, simpleLatest: options.simpleLatest, noUnreads: options.noUnreads, mpimAware: options.mpimAware, success: {(response) in
+        WebAPI.rtmStart(
+            token: token,
+            simpleLatest: options.simpleLatest,
+            noUnreads: options.noUnreads,
+            mpimAware: options.mpimAware,
+            success: {(response) in
             guard let socketURL = response["url"] as? String, let url = URL(string: socketURL) else {
                 return
             }
@@ -84,42 +89,44 @@ public final class SKRTMAPI: RTMDelegate {
             print(error)
         })
     }
-    
+
     public func disconnect() {
         rtm.disconnect()
     }
-    
-    public func sendMessage(_ message: String, channelID: String) throws {
+
+    public func sendMessage(_ message: String, channelID: String, threadTs: String? = nil) throws {
         guard connected else {
             throw SlackError.rtmConnectionError
         }
         do {
-            let string = try format(message: message, channel: channelID)
+            let string = try format(message: message, channel: channelID, threadTs: threadTs)
             try rtm.sendMessage(string)
         } catch let error {
             throw error
         }
     }
-    
-    private func format(message: String, channel: String) throws -> String {
-        let json: [String: Any] = [
+
+    private func format(message: String, channel: String, threadTs: String?) throws -> String {
+        let json: [String: Any?] = [
             "id": Date().slackTimestamp,
             "type": "message",
             "channel": channel,
-            "text": message.slackFormatEscaping
+            "text": message.slackFormatEscaping,
+            "thread_ts": threadTs
         ]
         guard
-            let data = try? JSONSerialization.data(withJSONObject: json, options: []),
+            let data = try? JSONSerialization.data(withJSONObject: filterNilParameters(json), options: []),
             let str = String(data: data, encoding: String.Encoding.utf8)
         else {
             throw SlackError.clientJSONError
         }
         return str
     }
-    
-    //MARK: - RTM Ping
+
+    // MARK: - RTM Ping
     private func pingRTMServer() {
-        let delay = DispatchTime.now() + Double(UInt64(options.pingInterval * Double(UInt64.nanosecondsPerSecond))) / Double(UInt64.nanosecondsPerSecond)
+        let pingInterval = Double(UInt64(options.pingInterval * Double(UInt64.nanosecondsPerSecond))) / Double(UInt64.nanosecondsPerSecond)
+        let delay = DispatchTime.now() + pingInterval
         DispatchQueue.main.asyncAfter(deadline: delay) {
             guard self.connected && self.isConnectionTimedOut else {
                 self.disconnect()
@@ -146,7 +153,7 @@ public final class SKRTMAPI: RTMDelegate {
             try rtm.sendMessage(string)
         }
     }
-    
+
     var isConnectionTimedOut: Bool {
         if let pong = pong, let ping = ping {
             if pong - ping < options.timeout {
@@ -158,30 +165,30 @@ public final class SKRTMAPI: RTMDelegate {
             return true
         }
     }
-    
-    //MARK: RTMDelegate
+
+    // MARK: RTMDelegate
     public func didConnect() {
         connected = true
         pingRTMServer()
     }
-    
+
     public func disconnected() {
         connected = false
         if options.reconnect {
             connect()
         }
     }
-    
+
     public func receivedMessage(_ message: String) {
         guard let data = message.data(using: String.Encoding.utf8) else {
             return
         }
 
-        if let json = (try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)) as? [String: Any] {
+        if let json = (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)) as? [String: Any] {
             dispatch(json)
         }
     }
-    
+
     internal func dispatch(_ anEvent: [String: Any]) {
         let event = Event(anEvent)
         let type = event.type ?? .unknown
