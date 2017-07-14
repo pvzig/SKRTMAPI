@@ -28,14 +28,13 @@ import SKCore
 import WebSocketClient
 
 public class ZewoRTM: RTMWebSocket {
-    
-    public var delegate: RTMDelegate?
+    public weak var delegate: RTMDelegate?
     var webSocket: WebSocket?
     let queue = DispatchQueue(label: "com.launchsoft.slackkit")
-    
+
     public required init() {}
-    
-    //MARK: - RTM
+
+    // MARK: - RTM
     public func connect(url: URL) {
         queue.async {
             do {
@@ -48,11 +47,11 @@ public class ZewoRTM: RTMWebSocket {
             }
         }
     }
-    
+
     public func disconnect() {
         try? webSocket?.close()
     }
-    
+
     public func sendMessage(_ message: String) throws {
         guard webSocket != nil else {
             throw SlackError.rtmConnectionError
@@ -63,17 +62,17 @@ public class ZewoRTM: RTMWebSocket {
             throw error
         }
     }
-    
+
     // MARK: - WebSocket
     private func setupSocket(_ webSocket: WebSocket) {
         webSocket.onText { (message) in
             self.delegate?.receivedMessage(message)
         }
-        webSocket.onClose { (code: CloseCode?, reason: String?) in
+        webSocket.onClose { _, _ in
             self.delegate?.disconnected()
         }
-        webSocket.onPing { (data) in try webSocket.pong() }
-        webSocket.onPong { (data) in try webSocket.ping() }
+        webSocket.onPing { _ in try webSocket.pong() }
+        webSocket.onPong { _ in try webSocket.ping() }
         self.webSocket = webSocket
     }
 }
