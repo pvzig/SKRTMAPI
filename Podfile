@@ -1,20 +1,20 @@
 use_frameworks!
 
-target 'SKWebAPI macOS' do
+target 'SKRTMAPI macOS' do
 	platform :osx, '10.11'
 	pod 'SKCore'
 	pod 'SKWebAPI'
 	pod 'Starscream'
 end
 
-target 'SKWebAPI iOS' do
+target 'SKRTMAPI iOS' do
 	platform :ios, '9.0'
 	pod 'SKCore'
 	pod 'SKWebAPI'
 	pod 'Starscream'
 end
 
-target 'SKWebAPI tvOS' do
+target 'SKRTMAPI tvOS' do
 	platform :tvos, '9.0'
 	pod 'SKCore'
 	pod 'SKWebAPI'
