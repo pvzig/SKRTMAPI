@@ -77,9 +77,12 @@ public final class SKRTMAPI: RTMDelegate {
         if withInfo {
             WebAPI.rtmStart(
                 token: token,
-                simpleLatest: options.simpleLatest,
-                noUnreads: options.noUnreads,
+                batchPresenceAware: options.noUnreads,
                 mpimAware: options.mpimAware,
+                noLatest: options.noLatest,
+                noUnreads: options.noUnreads,
+                presenceSub: options.presenceSub,
+                simpleLatest: options.simpleLatest,
                 success: {(response) in
                     guard let socketURL = response["url"] as? String, let url = URL(string: socketURL) else {
                         return
@@ -88,7 +91,8 @@ public final class SKRTMAPI: RTMDelegate {
                     self.adapter?.initialSetup(json: response, instance: self)
                 }, failure: { (error) in
                     print(error)
-            })
+                }
+            )
         } else {
             WebAPI.rtmConnect(
                 token: token,
@@ -102,7 +106,8 @@ public final class SKRTMAPI: RTMDelegate {
                     self.adapter?.initialSetup(json: response, instance: self)
                 }, failure: { (error) in
                     print(error)
-            })
+                }
+            )
         }
     }
 
