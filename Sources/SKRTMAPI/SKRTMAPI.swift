@@ -84,11 +84,7 @@ public final class SKRTMAPI: RTMDelegate {
                 presenceSub: options.presenceSub,
                 simpleLatest: options.simpleLatest,
                 success: {(response) in
-                    guard let socketURL = response["url"] as? String, let url = URL(string: socketURL) else {
-                        return
-                    }
-                    self.rtm.connect(url: url)
-                    self.adapter?.initialSetup(json: response, instance: self)
+                    connectWithResponse(response)
                 }, failure: { (error) in
                     print(error)
                 }
@@ -99,11 +95,7 @@ public final class SKRTMAPI: RTMDelegate {
                 batchPresenceAware: options.batchPresenceAware,
                 presenceSub: options.presenceSub,
                 success: {(response) in
-                    guard let socketURL = response["url"] as? String, let url = URL(string: socketURL) else {
-                        return
-                    }
-                    self.rtm.connect(url: url)
-                    self.adapter?.initialSetup(json: response, instance: self)
+                    connectWithResponse(response)
                 }, failure: { (error) in
                     print(error)
                 }
@@ -137,6 +129,17 @@ public final class SKRTMAPI: RTMDelegate {
         } catch let error {
             throw error
         }
+    }
+
+    private func connectWithResponse(_ response: [String: Any]) {
+        guard
+            let socketURL = response["url"] as? String,
+            let url = URL(string: socketURL)
+        else {
+            return
+        }
+        self.rtm.connect(url: url)
+        self.adapter?.initialSetup(json: response, instance: self)
     }
 
     private func format(message: String, channel: String, threadTs: String? = nil, broadcastReply: Bool = false) throws -> String {
