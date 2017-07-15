@@ -70,6 +70,13 @@ let rtm = SKRTMAPI(token: "xoxb-SLACK_AUTH_TOKEN")
 rtm.connect()
 ```
 
+If your bot doesn't need any state information when you connect, pass `false` for the `withInfo` parameter:
+
+```swift
+let rtm = SKRTMAPI(token: "xoxb-SLACK_AUTH_TOKEN")
+rtm.connect(withInfo: false)
+```
+
 Customize the connection with `RTMOptions`:
 
 ```swift
