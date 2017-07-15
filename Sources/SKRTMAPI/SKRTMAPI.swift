@@ -84,7 +84,7 @@ public final class SKRTMAPI: RTMDelegate {
                 presenceSub: options.presenceSub,
                 simpleLatest: options.simpleLatest,
                 success: {(response) in
-                    connectWithResponse(response)
+                    self.connectWithResponse(response)
                 }, failure: { (error) in
                     print(error)
                 }
@@ -95,7 +95,7 @@ public final class SKRTMAPI: RTMDelegate {
                 batchPresenceAware: options.batchPresenceAware,
                 presenceSub: options.presenceSub,
                 success: {(response) in
-                    connectWithResponse(response)
+                    self.connectWithResponse(response)
                 }, failure: { (error) in
                     print(error)
                 }
