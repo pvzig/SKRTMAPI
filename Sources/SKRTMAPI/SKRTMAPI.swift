@@ -73,21 +73,34 @@ public final class SKRTMAPI: RTMDelegate {
         self.rtm.delegate = self
     }
 
-    public func connect() {
-        WebAPI.rtmStart(
-            token: token,
-            simpleLatest: options.simpleLatest,
-            noUnreads: options.noUnreads,
-            mpimAware: options.mpimAware,
-            success: {(response) in
-            guard let socketURL = response["url"] as? String, let url = URL(string: socketURL) else {
-                return
-            }
-            self.rtm.connect(url: url)
-            self.adapter?.initialSetup(json: response, instance: self)
-        }, failure: { (error) in
-            print(error)
-        })
+    public func connect(withInfo: Bool = true) {
+        if withInfo {
+            WebAPI.rtmStart(
+                token: token,
+                batchPresenceAware: options.noUnreads,
+                mpimAware: options.mpimAware,
+                noLatest: options.noLatest,
+                noUnreads: options.noUnreads,
+                presenceSub: options.presenceSub,
+                simpleLatest: options.simpleLatest,
+                success: {(response) in
+                    connectWithResponse(response)
+                }, failure: { (error) in
+                    print(error)
+                }
+            )
+        } else {
+            WebAPI.rtmConnect(
+                token: token,
+                batchPresenceAware: options.batchPresenceAware,
+                presenceSub: options.presenceSub,
+                success: {(response) in
+                    connectWithResponse(response)
+                }, failure: { (error) in
+                    print(error)
+                }
+            )
+        }
     }
 
     public func disconnect() {
@@ -116,6 +129,17 @@ public final class SKRTMAPI: RTMDelegate {
         } catch let error {
             throw error
         }
+    }
+
+    private func connectWithResponse(_ response: [String: Any]) {
+        guard
+            let socketURL = response["url"] as? String,
+            let url = URL(string: socketURL)
+        else {
+            return
+        }
+        self.rtm.connect(url: url)
+        self.adapter?.initialSetup(json: response, instance: self)
     }
 
     private func format(message: String, channel: String, threadTs: String? = nil, broadcastReply: Bool = false) throws -> String {
