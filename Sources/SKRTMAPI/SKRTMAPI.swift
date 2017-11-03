@@ -107,12 +107,12 @@ public final class SKRTMAPI: RTMDelegate {
         rtm.disconnect()
     }
 
-    public func sendMessage(_ message: String, channelID: String) throws {
+    public func sendMessage(_ message: String, channelID: String, id: String? = nil) throws {
         guard connected else {
             throw SlackError.rtmConnectionError
         }
         do {
-            let string = try format(message: message, channel: channelID)
+            let string = try format(message: message, channel: channelID, id: id)
             try rtm.sendMessage(string)
         } catch let error {
             throw error
@@ -142,9 +142,9 @@ public final class SKRTMAPI: RTMDelegate {
         self.adapter?.initialSetup(json: response, instance: self)
     }
 
-    private func format(message: String, channel: String, threadTs: String? = nil, broadcastReply: Bool = false) throws -> String {
+    private func format(message: String, channel: String, id: String? = nil, threadTs: String? = nil, broadcastReply: Bool = false) throws -> String {
         let json: [String: Any?] = [
-            "id": Date().slackTimestamp,
+            "id": id ?? Date().slackTimestamp,
             "type": "message",
             "channel": channel,
             "text": message.slackFormatEscaping,
