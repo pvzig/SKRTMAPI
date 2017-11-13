@@ -55,19 +55,20 @@ public class StarscreamRTM: RTMWebSocket, WebSocketDelegate {
     }
 
     // MARK: - WebSocketDelegate
-    public func websocketDidConnect(socket: WebSocket) {
+    public func websocketDidConnect(socket: WebSocketClient) {
         delegate?.didConnect()
     }
 
-    public func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
+    public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         webSocket = nil
         delegate?.disconnected()
     }
 
-    public func websocketDidReceiveMessage(socket: WebSocket, text: String) {
+    public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
         delegate?.receivedMessage(text)
     }
 
-    public func websocketDidReceiveData(socket: WebSocket, data: Data) {}
+    public func websocketDidReceiveData(socket: WebSocketClient, data: Data) {}
+
 }
 #endif
