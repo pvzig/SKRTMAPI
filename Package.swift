@@ -1,20 +1,27 @@
+// swift-tools-version:4.0
 import PackageDescription
+
+#if os(macOS) || os(iOS) || os(tvOS)
+let websocket: Package.Dependency = .package(url: "https://github.com/daltoniam/Starscream", .upToNextMinor(from: "2.0.0"))
+let websocketDependency: Target.Dependency = "Starscream"
+#else
+let websocket: Package.Dependency = .package(url: "https://github.com/Zewo/WebSocketClient.git", .upToNextMinor(from: "0.14.0"))
+let websocketDependency: Target.Dependency = "WebSocketClient"
+#endif
 
 let package = Package(
     name: "SKRTMAPI",
-    targets: [
-        Target(name: "SKRTMAPI")
+    products: [
+        .library(name: "SKRTMAPI", targets: ["SKRTMAPI"]),
     ],
     dependencies: [
-        .Package(url: "https://github.com/SlackKit/SKCore", majorVersion: 4),
-        .Package(url: "https://github.com/SlackKit/SKWebAPI", majorVersion: 4)
+    	.package(url: "https://github.com/SlackKit/SKCore", .upToNextMinor(from: "4.0.0")),
+    	.package(url: "https://github.com/SlackKit/SKWebAPI", .upToNextMinor(from: "4.0.0")),
+    	websocket
+    ],
+    targets: [
+    	.target(name: "SKRTMAPI", 
+    			dependencies: ["SKCore", "SKWebAPI", websocketDependency],
+    			path: "Sources")
     ]
 )
-
-var dependency: Package.Dependency
-#if os(macOS) || os(iOS) || os(tvOS)
-dependency = .Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2)
-#else
-dependency = .Package(url: "https://github.com/Zewo/WebSocketClient.git", majorVersion: 0, minor: 14)
-#endif
-package.dependencies.append(dependency)

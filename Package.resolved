@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SKCore",
+        "repositoryURL": "https://github.com/SlackKit/SKCore",
+        "state": {
+          "branch": null,
+          "revision": "a5fc6bb9ed9cd24a1b7fc3f7b3b23180f23c3282",
+          "version": "4.0.4"
+        }
+      },
+      {
+        "package": "SKWebAPI",
+        "repositoryURL": "https://github.com/SlackKit/SKWebAPI",
+        "state": {
+          "branch": null,
+          "revision": "c1b6169a3f7ca140e37d59dc7b29993221202f3b",
+          "version": "4.0.7"
+        }
+      },
+      {
+        "package": "SSCZLib",
+        "repositoryURL": "https://github.com/daltoniam/zlib-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "83ac8d719a2f3aa775dbdf116a57f56fb2c49abb",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "SSCommonCrypto",
+        "repositoryURL": "https://github.com/daltoniam/common-crypto-spm",
+        "state": {
+          "branch": null,
+          "revision": "2eb3aff0fb57f92f5722fac5d6d20bf64669ca66",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream",
+        "state": {
+          "branch": null,
+          "revision": "85070aab91d3f8495d8bd378e81dcc00b368898c",
+          "version": "2.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
