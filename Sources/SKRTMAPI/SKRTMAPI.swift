@@ -54,6 +54,7 @@ public final class SKRTMAPI: RTMDelegate {
     public var token = "xoxp-SLACK_AUTH_TOKEN"
     internal var options: RTMOptions
     var connected = false
+    public var connectionRetryInterval: TimeInterval? = nil
 
     var ping: Double?
     var pong: Double?
@@ -86,7 +87,7 @@ public final class SKRTMAPI: RTMDelegate {
                 success: {(response) in
                     self.connectWithResponse(response)
                 }, failure: { (error) in
-                    print(error)
+                    self.retryConnection()
                 }
             )
         } else {
@@ -97,9 +98,20 @@ public final class SKRTMAPI: RTMDelegate {
                 success: {(response) in
                     self.connectWithResponse(response)
                 }, failure: { (error) in
-                    print(error)
+                    self.retryConnection()
                 }
             )
+        }
+    }
+
+    private func retryConnection() {
+        guard let connectionRetryInterval = self.connectionRetryInterval else {
+            return
+        }
+        let retryInterval = Double(UInt64(connectionRetryInterval * Double(UInt64.nanosecondsPerSecond))) / Double(UInt64.nanosecondsPerSecond)
+        let delay = DispatchTime.now() + retryInterval
+        DispatchQueue.main.asyncAfter(deadline: delay) {
+            self.connect()
         }
     }
 
