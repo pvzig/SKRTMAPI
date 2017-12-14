@@ -39,6 +39,7 @@ public protocol RTMWebSocket {
 public protocol RTMAdapter: class {
     func initialSetup(json: [String: Any], instance: SKRTMAPI)
     func notificationForEvent(_ event: Event, type: EventType, instance: SKRTMAPI)
+    func connectionClosed(with error: Error, instance: SKRTMAPI)
 }
 
 public protocol RTMDelegate: class {
@@ -53,8 +54,7 @@ public final class SKRTMAPI: RTMDelegate {
     public var adapter: RTMAdapter?
     public var token = "xoxp-SLACK_AUTH_TOKEN"
     internal var options: RTMOptions
-    var connected = false
-    public var connectionRetryInterval: TimeInterval? = nil
+    public private(set) var connected = false
 
     var ping: Double?
     var pong: Double?
@@ -87,7 +87,7 @@ public final class SKRTMAPI: RTMDelegate {
                 success: {(response) in
                     self.connectWithResponse(response)
                 }, failure: { (error) in
-                    self.retryConnection()
+                    self.adapter?.connectionClosed(with: error, instance: self)
                 }
             )
         } else {
@@ -98,20 +98,9 @@ public final class SKRTMAPI: RTMDelegate {
                 success: {(response) in
                     self.connectWithResponse(response)
                 }, failure: { (error) in
-                    self.retryConnection()
+                    self.adapter?.connectionClosed(with: error, instance: self)
                 }
             )
-        }
-    }
-
-    private func retryConnection() {
-        guard let connectionRetryInterval = self.connectionRetryInterval else {
-            return
-        }
-        let retryInterval = Double(UInt64(connectionRetryInterval * Double(UInt64.nanosecondsPerSecond))) / Double(UInt64.nanosecondsPerSecond)
-        let delay = DispatchTime.now() + retryInterval
-        DispatchQueue.main.asyncAfter(deadline: delay) {
-            self.connect()
         }
     }
 
@@ -225,6 +214,8 @@ public final class SKRTMAPI: RTMDelegate {
         connected = false
         if options.reconnect {
             connect()
+        } else {
+            adapter?.connectionClosed(with: SlackError.rtmConnectionError, instance: self)
         }
     }
 
