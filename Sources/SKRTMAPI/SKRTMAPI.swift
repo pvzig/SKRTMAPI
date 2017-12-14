@@ -214,6 +214,8 @@ public final class SKRTMAPI: RTMDelegate {
         connected = false
         if options.reconnect {
             connect()
+        } else {
+            adapter?.connectionClosed(with: SlackError.rtmConnectionError, instance: self)
         }
     }
 
