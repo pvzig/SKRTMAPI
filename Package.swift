@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "SKRTMAPI",
+    products: [
+        .library(name: "SKRTMAPI", targets: ["SKRTMAPI"])
+    ],
     dependencies: [
         .package(url: "https://github.com/SlackKit/SKCore", .upToNextMajor(from: "4.0.0")),
         .package(url: "https://github.com/SlackKit/SKWebAPI", .upToNextMajor(from: "4.0.0")),
