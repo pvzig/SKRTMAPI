@@ -16,12 +16,9 @@
 		26D1C4D91EE4655100C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D61EE4655100C95954 /* SKCore.framework */; };
 		26D1C4DA1EE4655100C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D71EE4655100C95954 /* SKWebAPI.framework */; };
 		26D1C4DB1EE4655100C95954 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D81EE4655100C95954 /* Starscream.framework */; };
-		26DC0EB31E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
-		26DC0EB41E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
-		26DC0EB51E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
-		26DC0EB61E95BED900991BDF /* ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* ZewoRTM.swift */; };
-		26DC0EB71E95BED900991BDF /* ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* ZewoRTM.swift */; };
-		26DC0EB81E95BED900991BDF /* ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* ZewoRTM.swift */; };
+		26DC0EB61E95BED900991BDF /* VaporEngineRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */; };
+		26DC0EB71E95BED900991BDF /* VaporEngineRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */; };
+		26DC0EB81E95BED900991BDF /* VaporEngineRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */; };
 		26DC0EB91E95BED900991BDF /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */; };
 		26DC0EBA1E95BED900991BDF /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */; };
 		26DC0EBB1E95BED900991BDF /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */; };
@@ -41,9 +38,9 @@
 		26D1C4D61EE4655100C95954 /* SKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKCore.framework; path = Carthage/Build/tvOS/SKCore.framework; sourceTree = "<group>"; };
 		26D1C4D71EE4655100C95954 /* SKWebAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKWebAPI.framework; path = Carthage/Build/tvOS/SKWebAPI.framework; sourceTree = "<group>"; };
 		26D1C4D81EE4655100C95954 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/tvOS/Starscream.framework; sourceTree = "<group>"; };
-		26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarscreamRTM.swift; sourceTree = "<group>"; };
-		26DC0EB11E95BED900991BDF /* ZewoRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZewoRTM.swift; sourceTree = "<group>"; };
+		26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaporEngineRTM.swift; sourceTree = "<group>"; };
 		26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRTMAPI.swift; sourceTree = "<group>"; };
+		D2C085F12024BF9600FEC5AB /* WebSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +150,8 @@
 		26DC0EAF1E95BED900991BDF /* Conformers */ = {
 			isa = PBXGroup;
 			children = (
-				26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */,
-				26DC0EB11E95BED900991BDF /* ZewoRTM.swift */,
+				26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */,
+				D2C085F12024BF9600FEC5AB /* WebSocketFactory.swift */,
 			);
 			path = Conformers;
 			sourceTree = "<group>";
@@ -357,8 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DC0EB61E95BED900991BDF /* ZewoRTM.swift in Sources */,
-				26DC0EB31E95BED900991BDF /* StarscreamRTM.swift in Sources */,
+				26DC0EB61E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
 				26DC0EB91E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,8 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DC0EB71E95BED900991BDF /* ZewoRTM.swift in Sources */,
-				26DC0EB41E95BED900991BDF /* StarscreamRTM.swift in Sources */,
+				26DC0EB71E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
 				26DC0EBA1E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,8 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DC0EB81E95BED900991BDF /* ZewoRTM.swift in Sources */,
-				26DC0EB51E95BED900991BDF /* StarscreamRTM.swift in Sources */,
+				26DC0EB81E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
 				26DC0EBB1E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
