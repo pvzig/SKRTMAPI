@@ -1,20 +1,17 @@
+// swift-tools-version:4.0
 import PackageDescription
 
 let package = Package(
     name: "SKRTMAPI",
-    targets: [
-        Target(name: "SKRTMAPI")
+    products: [
+        .library(name: "SKRTMAPI", targets: ["SKRTMAPI"])
     ],
     dependencies: [
-        .Package(url: "https://github.com/SlackKit/SKCore", majorVersion: 4),
-        .Package(url: "https://github.com/SlackKit/SKWebAPI", majorVersion: 4)
+        .package(url: "https://github.com/SlackKit/SKCore", .upToNextMajor(from: "4.0.0")),
+        .package(url: "https://github.com/SlackKit/SKWebAPI", .upToNextMajor(from: "4.0.0")),
+        .package(url: "https://github.com/vapor/engine", .upToNextMajor(from: "2.2.2")),
+    ],
+    targets: [
+        .target(name: "SKRTMAPI", dependencies: ["SKCore", "SKWebAPI", "WebSockets", "HTTP", "URI"])
     ]
 )
-
-var dependency: Package.Dependency
-#if os(macOS) || os(iOS) || os(tvOS)
-dependency = .Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2)
-#else
-dependency = .Package(url: "https://github.com/Zewo/WebSocketClient.git", majorVersion: 0, minor: 14)
-#endif
-package.dependencies.append(dependency)
