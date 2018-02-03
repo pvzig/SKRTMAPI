@@ -25,7 +25,7 @@ public class VaporEngineRTM: RTMWebSocket {
                     port: uri.port ?? 443
                 )
                 let stream = try TLS.InternetSocket(tcp, TLS.Context(.client))
-                try WebSocket.connect(
+                try WebSocket.background(
                     to: uri,
                     using: stream,
                     protocols: protocols,
@@ -38,7 +38,7 @@ public class VaporEngineRTM: RTMWebSocket {
                     hostname: uri.hostname,
                     port: uri.port ?? 80
                 )
-                try WebSocket.connect(
+                try WebSocket.background(
                     to: uri,
                     using: stream,
                     protocols: protocols,
