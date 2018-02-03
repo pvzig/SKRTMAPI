@@ -1,6 +1,8 @@
 import Foundation
 import Sockets
 import HTTP
+import TLS
+import URI
 import WebSockets
 
 public class VaporEngineRTM: RTMWebSocket {
@@ -13,28 +15,61 @@ public class VaporEngineRTM: RTMWebSocket {
     public func connect(url: URL) {
 
         let headers: [HeaderKey: String] = ["Authorized": "Bearer exampleBearer"]
+        let protocols: [String]? = nil
         do {
-            let scheme = url.scheme!
-            let hostname = url.host!
-            let port = Port(url.port!)
-            let socket = try TCPInternetSocket(scheme: scheme, hostname: hostname, port: port)
-            let uri = "\(scheme):\(hostname)"
-            try WebSocket.background(to: uri, using: socket, headers: headers) { (websocket: WebSocket) throws -> Void in
-
-                self.websocket = websocket
-
-                self.delegate?.didConnect()
-
-                websocket.onText = { ws, text in
-                    self.delegate?.receivedMessage(text)
-                }
-
-                websocket.onClose = { ws in
-                    self.delegate?.disconnected()
-                }
+            let uri = try! URI(url.absoluteString)
+            if uri.scheme.isSecure {
+                let tcp = try TCPInternetSocket(
+                    scheme: "https",
+                    hostname: uri.hostname,
+                    port: uri.port ?? 443
+                )
+                let stream = try TLS.InternetSocket(tcp, TLS.Context(.client))
+                try WebSocket.connect(
+                    to: uri,
+                    using: stream,
+                    protocols: protocols,
+                    headers: headers,
+                    onConnect: didConnect
+                )
+            } else {
+                let stream = try TCPInternetSocket(
+                    scheme: "http",
+                    hostname: uri.hostname,
+                    port: uri.port ?? 80
+                )
+                try WebSocket.connect(
+                    to: uri,
+                    using: stream,
+                    protocols: protocols,
+                    headers: headers,
+                    onConnect: didConnect
+                )
             }
         } catch {
-            print("Error connecting to \(url): \(error)")
+            print("Error connecting to \(url.absoluteString): \(error)")
+        }
+    }
+
+    func didConnect(websocket: WebSocket) throws -> Void {
+        self.websocket = websocket
+
+        self.delegate?.didConnect()
+
+        websocket.onText = { ws, text in
+            self.delegate?.receivedMessage(text)
+        }
+
+        websocket.onClose = { ws in
+            self.delegate?.disconnected()
+        }
+
+        websocket.onPing = { ws, data in
+            try ws.pong(data)
+        }
+
+        websocket.onPong = { ws, data in
+            try ws.ping(data)
         }
     }
 
@@ -47,6 +82,7 @@ public class VaporEngineRTM: RTMWebSocket {
     }
 
     public func sendMessage(_ message: String) throws {
-        try self.websocket?.send(message)
+        guard let websocket = websocket else { throw SlackError.rtmConnectionError }
+        try websocket.send(message)
     }
 }
