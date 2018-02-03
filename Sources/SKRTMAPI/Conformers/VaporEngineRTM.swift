@@ -14,7 +14,7 @@ public class VaporEngineRTM: RTMWebSocket {
 
     public func connect(url: URL) {
 
-        let headers: [HeaderKey: String] = ["Authorized": "Bearer exampleBearer"]
+        let headers: [HeaderKey: String] = [:]
         let protocols: [String]? = nil
         do {
             let uri = try! URI(url.absoluteString)
