@@ -12,8 +12,7 @@ let package = Package(
     ]
 )
 
-var dependency: Package.Dependency
 #if os(macOS) || os(iOS) || os(tvOS)
-dependency = .Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2)
+package.dependencies.append(.Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2))
 #endif
-package.dependencies.append(dependency)
+
