@@ -34,7 +34,6 @@
 		OBJ_428 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_309 /* Package.swift */; };
 		OBJ_434 /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* StarscreamRTM.swift */; };
 		OBJ_435 /* VaporEngineRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* VaporEngineRTM.swift */; };
-		OBJ_436 /* ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ZewoRTM.swift */; };
 		OBJ_437 /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* SKRTMAPI.swift */; };
 		OBJ_439 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
 		OBJ_440 /* SMTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Engine::SMTP::Product" /* SMTP.framework */; };
@@ -368,637 +367,637 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B4003D9220231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE1202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Starscream::Starscream";
 			remoteInfo = Starscream;
 		};
-		B4003D9320231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE2202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::SMTP";
 			remoteInfo = SMTP;
 		};
-		B4003D9420231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE3202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Sockets";
 			remoteInfo = Sockets;
 		};
-		B4003D9520231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE4202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003D9620231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE5202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003D9720231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE6202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003D9820231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE7202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003D9920231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE8202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003D9A20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBE9202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003D9B20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBEA202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003D9C20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBEB202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003D9D20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBEC202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003D9E20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBED202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003D9F20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBEE202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DA020231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBEF202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DA120231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF0202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003DA220231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF1202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DA320231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF2202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DA420231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF3202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DA520231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF4202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DA620231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF5202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::WebSockets";
 			remoteInfo = WebSockets;
 		};
-		B4003DA720231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF6202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Crypto::Crypto";
 			remoteInfo = Crypto;
 		};
-		B4003DA820231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF7202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Random::Random";
 			remoteInfo = Random;
 		};
-		B4003DA920231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF8202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DAA20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBF9202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DAB20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBFA202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DAC20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBFB202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DAD20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBFC202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DAE20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBFD202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DAF20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBFE202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DB020231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEBFF202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DB120231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC00202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::HTTP";
 			remoteInfo = HTTP;
 		};
-		B4003DB220231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC01202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Random::Random";
 			remoteInfo = Random;
 		};
-		B4003DB320231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC02202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "TLS::TLS";
 			remoteInfo = TLS;
 		};
-		B4003DB420231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC03202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Sockets";
 			remoteInfo = Sockets;
 		};
-		B4003DB520231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC04202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003DB620231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC05202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DB720231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC06202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DB820231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC07202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DB920231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC08202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DBA20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC09202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Sockets";
 			remoteInfo = Sockets;
 		};
-		B4003DBB20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC0A202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::URI";
 			remoteInfo = URI;
 		};
-		B4003DBC20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC0B202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003DBD20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC0C202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DBE20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC0D202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DBF20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC0E202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DC020231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC0F202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DC120231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC10202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::CHTTP";
 			remoteInfo = CHTTP;
 		};
-		B4003DC220231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC11202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003DC320231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC12202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DC420231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC13202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DC520231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC14202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DC620231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC15202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DC720231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC16202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::CHTTP";
 			remoteInfo = CHTTP;
 		};
-		B4003DC820231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC17202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Random::Random";
 			remoteInfo = Random;
 		};
-		B4003DC920231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC18202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "TLS::TLS";
 			remoteInfo = TLS;
 		};
-		B4003DCA20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC19202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Sockets";
 			remoteInfo = Sockets;
 		};
-		B4003DCB20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC1A202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::URI";
 			remoteInfo = URI;
 		};
-		B4003DCC20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC1B202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003DCD20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC1C202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DCE20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC1D202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DCF20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC1E202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DD020231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC1F202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DD120231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC20202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::CHTTP";
 			remoteInfo = CHTTP;
 		};
-		B4003DD220231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC21202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Crypto::Crypto";
 			remoteInfo = Crypto;
 		};
-		B4003DD320231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC22202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::Cookies";
 			remoteInfo = Cookies;
 		};
-		B4003DD420231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC23202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::HTTP";
 			remoteInfo = HTTP;
 		};
-		B4003DD520231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC24202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Random::Random";
 			remoteInfo = Random;
 		};
-		B4003DD620231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC25202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "TLS::TLS";
 			remoteInfo = TLS;
 		};
-		B4003DD720231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC26202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Sockets";
 			remoteInfo = Sockets;
 		};
-		B4003DD820231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC27202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::URI";
 			remoteInfo = URI;
 		};
-		B4003DD920231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC28202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003DDA20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC29202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DDB20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC2A202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DDC20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC2B202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DDD20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC2C202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DDE20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC2D202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::CHTTP";
 			remoteInfo = CHTTP;
 		};
-		B4003DDF20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC2E202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::HTTP";
 			remoteInfo = HTTP;
 		};
-		B4003DE020231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC2F202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Random::Random";
 			remoteInfo = Random;
 		};
-		B4003DE120231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC30202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "TLS::TLS";
 			remoteInfo = TLS;
 		};
-		B4003DE220231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC31202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Sockets";
 			remoteInfo = Sockets;
 		};
-		B4003DE320231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC32202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::URI";
 			remoteInfo = URI;
 		};
-		B4003DE420231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC33202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Sockets::Transport";
 			remoteInfo = Transport;
 		};
-		B4003DE520231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC34202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::Core";
 			remoteInfo = Core;
 		};
-		B4003DE620231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC35202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Debugging::Debugging";
 			remoteInfo = Debugging;
 		};
-		B4003DE720231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC36202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Bits::Bits";
 			remoteInfo = Bits;
 		};
-		B4003DE820231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC37202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Core::libc";
 			remoteInfo = libc;
 		};
-		B4003DE920231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC38202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Engine::CHTTP";
 			remoteInfo = CHTTP;
 		};
-		B4003DEA20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC39202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SKWebAPI::SKWebAPI";
 			remoteInfo = SKWebAPI;
 		};
-		B4003DEB20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC3A202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SKCore::SKCore";
 			remoteInfo = SKCore;
 		};
-		B4003DEC20231065004281A3 /* PBXContainerItemProxy */ = {
+		B45FEC3B202625DE00FB6995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -1036,7 +1035,6 @@
 		OBJ_116 /* WebSocket+ControlFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebSocket+ControlFrames.swift"; sourceTree = "<group>"; };
 		OBJ_117 /* WebSocket+Send.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebSocket+Send.swift"; sourceTree = "<group>"; };
 		OBJ_119 /* Headers+WebSockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Headers+WebSockets.swift"; sourceTree = "<group>"; };
-		OBJ_12 /* ZewoRTM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZewoRTM.swift; sourceTree = "<group>"; };
 		OBJ_120 /* WebSockets+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebSockets+Hash.swift"; sourceTree = "<group>"; };
 		OBJ_122 /* Fragmentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fragmentation.swift; sourceTree = "<group>"; };
 		OBJ_123 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
@@ -2248,7 +2246,7 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -2258,7 +2256,6 @@
 				OBJ_16 /* Dependencies */,
 				OBJ_337 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* FoundationClient */ = {
@@ -2395,7 +2392,6 @@
 			children = (
 				OBJ_10 /* StarscreamRTM.swift */,
 				OBJ_11 /* VaporEngineRTM.swift */,
-				OBJ_12 /* ZewoRTM.swift */,
 			);
 			path = Conformers;
 			sourceTree = "<group>";
@@ -2997,7 +2993,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_337 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -3141,7 +3137,6 @@
 			files = (
 				OBJ_434 /* StarscreamRTM.swift in Sources */,
 				OBJ_435 /* VaporEngineRTM.swift in Sources */,
-				OBJ_436 /* ZewoRTM.swift in Sources */,
 				OBJ_437 /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3516,457 +3511,457 @@
 		OBJ_457 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Starscream::Starscream" /* Starscream */;
-			targetProxy = B4003D9220231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE1202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_459 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::SMTP" /* SMTP */;
-			targetProxy = B4003D9320231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE2202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_461 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::WebSockets" /* WebSockets */;
-			targetProxy = B4003DA620231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF5202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_463 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Crypto::Crypto" /* Crypto */;
-			targetProxy = B4003DD220231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC21202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_465 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::Cookies" /* Cookies */;
-			targetProxy = B4003DD320231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC22202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_467 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::HTTP" /* HTTP */;
-			targetProxy = B4003DDF20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC2E202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_469 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Random::Random" /* Random */;
-			targetProxy = B4003DE020231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC2F202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_471 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "TLS::TLS" /* TLS */;
-			targetProxy = B4003DE120231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC30202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_473 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Sockets" /* Sockets */;
-			targetProxy = B4003DE220231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC31202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_475 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::URI" /* URI */;
-			targetProxy = B4003DE320231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC32202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_477 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003DE420231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC33202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_479 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DE520231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC34202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_481 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DE620231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC35202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_483 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DE720231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC36202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_485 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DE820231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC37202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_487 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::CHTTP" /* CHTTP */;
-			targetProxy = B4003DE920231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC38202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_489 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SKWebAPI::SKWebAPI" /* SKWebAPI */;
-			targetProxy = B4003DEA20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC39202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_491 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SKCore::SKCore" /* SKCore */;
-			targetProxy = B4003DEC20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC3B202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_533 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Sockets" /* Sockets */;
-			targetProxy = B4003D9420231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE3202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_534 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003DA120231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF0202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_535 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DA220231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF1202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_536 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DA320231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF2202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_537 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DA420231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF3202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_538 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DA520231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF4202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_570 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Crypto::Crypto" /* Crypto */;
-			targetProxy = B4003DA720231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF6202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_571 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::HTTP" /* HTTP */;
-			targetProxy = B4003DB120231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC00202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_572 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Random::Random" /* Random */;
-			targetProxy = B4003DC820231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC17202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_573 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "TLS::TLS" /* TLS */;
-			targetProxy = B4003DC920231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC18202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_574 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Sockets" /* Sockets */;
-			targetProxy = B4003DCA20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC19202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_575 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::URI" /* URI */;
-			targetProxy = B4003DCB20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC1A202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003DCC20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC1B202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DCD20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC1C202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_578 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DCE20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC1D202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_579 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DCF20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC1E202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_580 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DD020231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC1F202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_581 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::CHTTP" /* CHTTP */;
-			targetProxy = B4003DD120231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC20202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_605 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Random::Random" /* Random */;
-			targetProxy = B4003DA820231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF7202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_606 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DAD20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBFC202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_607 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DAE20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBFD202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_608 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DAF20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBFE202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_609 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DB020231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBFF202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_637 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::HTTP" /* HTTP */;
-			targetProxy = B4003DD420231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC23202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_638 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Random::Random" /* Random */;
-			targetProxy = B4003DD520231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC24202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_639 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "TLS::TLS" /* TLS */;
-			targetProxy = B4003DD620231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC25202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_640 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Sockets" /* Sockets */;
-			targetProxy = B4003DD720231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC26202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_641 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::URI" /* URI */;
-			targetProxy = B4003DD820231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC27202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_642 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003DD920231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC28202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_643 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DDA20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC29202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_644 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DDB20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC2A202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_645 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DDC20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC2B202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_646 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DDD20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC2C202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_647 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::CHTTP" /* CHTTP */;
-			targetProxy = B4003DDE20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC2D202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_708 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Random::Random" /* Random */;
-			targetProxy = B4003DB220231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC01202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_709 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "TLS::TLS" /* TLS */;
-			targetProxy = B4003DB320231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC02202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_710 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Sockets" /* Sockets */;
-			targetProxy = B4003DBA20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC09202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_711 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::URI" /* URI */;
-			targetProxy = B4003DBB20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC0A202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_712 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003DC220231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC11202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_713 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DC320231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC12202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_714 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DC420231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC13202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_715 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DC520231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC14202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_716 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DC620231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC15202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_717 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::CHTTP" /* CHTTP */;
-			targetProxy = B4003DC720231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC16202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_733 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DA920231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF8202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_734 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DAA20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBF9202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_735 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DAB20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBFA202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_736 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DAC20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBFB202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_760 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Sockets" /* Sockets */;
-			targetProxy = B4003DB420231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC03202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_761 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003DB520231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC04202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_762 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DB620231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC05202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_763 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DB720231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC06202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_764 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DB820231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC07202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_765 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DB920231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC08202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_798 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003D9520231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE4202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_799 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003D9D20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBEC202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_800 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003D9E20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBED202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_801 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003D9F20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBEE202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_802 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DA020231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBEF202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_820 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Sockets::Transport" /* Transport */;
-			targetProxy = B4003DBC20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC0B202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_821 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003DBD20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC0C202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_822 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003DBE20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC0D202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_823 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003DBF20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC0E202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_824 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003DC020231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC0F202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Engine::CHTTP" /* CHTTP */;
-			targetProxy = B4003DC120231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC10202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_845 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::Core" /* Core */;
-			targetProxy = B4003D9620231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE5202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_846 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003D9A20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE9202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_847 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003D9B20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBEA202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_848 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003D9C20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBEB202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_880 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Debugging::Debugging" /* Debugging */;
-			targetProxy = B4003D9720231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE6202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_881 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Bits::Bits" /* Bits */;
-			targetProxy = B4003D9820231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE7202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_882 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Core::libc" /* libc */;
-			targetProxy = B4003D9920231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEBE8202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 		OBJ_934 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SKCore::SKCore" /* SKCore */;
-			targetProxy = B4003DEB20231065004281A3 /* PBXContainerItemProxy */;
+			targetProxy = B45FEC3A202625DE00FB6995 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
