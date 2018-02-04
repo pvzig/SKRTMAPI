@@ -11,8 +11,3 @@ let package = Package(
         .Package(url: "https://github.com/vapor/engine.git", majorVersion: 2)
     ]
 )
-
-#if os(macOS) || os(iOS) || os(tvOS)
-package.dependencies.append(.Package(url: "https://github.com/daltoniam/Starscream", majorVersion: 2))
-#endif
-
