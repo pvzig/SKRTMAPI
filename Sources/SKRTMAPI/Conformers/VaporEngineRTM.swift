@@ -30,9 +30,9 @@ import URI
 import WebSockets
 
 public class VaporEngineRTM: RTMWebSocket {
-    public var delegate: RTMDelegate?
+    public weak var delegate: RTMDelegate?
 
-    public required init(){}
+    public required init() {}
 
     private var websocket: WebSocket?
 
@@ -41,7 +41,7 @@ public class VaporEngineRTM: RTMWebSocket {
         let headers: [HeaderKey: String] = [:]
         let protocols: [String]? = nil
         do {
-            let uri = try! URI(url.absoluteString)
+            let uri = try URI(url.absoluteString)
             if uri.scheme.isSecure {
                 let tcp = try TCPInternetSocket(
                     scheme: "https",
@@ -75,7 +75,7 @@ public class VaporEngineRTM: RTMWebSocket {
         }
     }
 
-    func didConnect(websocket: WebSocket) throws -> Void {
+    func didConnect(websocket: WebSocket) throws {
         self.websocket = websocket
 
         self.delegate?.didConnect()
@@ -84,7 +84,7 @@ public class VaporEngineRTM: RTMWebSocket {
             self.delegate?.receivedMessage(text)
         }
 
-        websocket.onClose = { ws in
+        websocket.onClose = { ws, _, _, close in
             self.delegate?.disconnected()
         }
 

@@ -143,7 +143,12 @@ public final class SKRTMAPI: RTMDelegate {
         self.adapter?.initialSetup(json: response, instance: self)
     }
 
-    private func format(message: String, channel: String, id: String? = nil, threadTs: String? = nil, broadcastReply: Bool = false) throws -> String {
+    private func format(message: String,
+                        channel: String,
+                        id: String? = nil,
+                        threadTs: String? = nil,
+                        broadcastReply: Bool = false
+    ) throws -> String {
         let json: [String: Any?] = [
             "id": id ?? Date().slackTimestamp,
             "type": "message",
