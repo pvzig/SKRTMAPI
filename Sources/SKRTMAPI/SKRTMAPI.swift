@@ -65,7 +65,7 @@ public final class SKRTMAPI: RTMDelegate {
             self.rtm = rtm
         } else {
             #if os(Linux)
-                self.rtm = ZewoRTM()
+                self.rtm = VaporEngineRTM()
             #else
                 self.rtm = StarscreamRTM()
             #endif

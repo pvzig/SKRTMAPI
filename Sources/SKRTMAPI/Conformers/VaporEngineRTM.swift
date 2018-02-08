@@ -1,5 +1,5 @@
 //
-//  ZewoRTM.swift
+//  VaporEngineRTM.swift
 //
 // Copyright © 2017 Peter Zignego. All rights reserved.
 //
@@ -25,9 +25,9 @@
 import Dispatch
 import Foundation
 import SKCore
-import WebSocketClient
+import URI
 
-public class ZewoRTM: RTMWebSocket {
+public class VaporEngineRTM: RTMWebSocket {
     public weak var delegate: RTMDelegate?
     var webSocket: WebSocket?
     let queue = DispatchQueue(label: "com.launchsoft.slackkit")
@@ -38,10 +38,10 @@ public class ZewoRTM: RTMWebSocket {
     public func connect(url: URL) {
         queue.async {
             do {
-                try WebSocketClient(url: url, didConnect: { (webSocket) in
+                try WebSocketFactory.shared.connect(to: url.absoluteString) { (webSocket) in
                     self.delegate?.didConnect()
                     self.setupSocket(webSocket)
-                }).connect()
+                }
             } catch let error {
                 print("WebSocket client could not connect: \(error)")
             }
@@ -65,14 +65,14 @@ public class ZewoRTM: RTMWebSocket {
 
     // MARK: - WebSocket
     private func setupSocket(_ webSocket: WebSocket) {
-        webSocket.onText { (message) in
+        webSocket.onText = { _, message in
             self.delegate?.receivedMessage(message)
         }
-        webSocket.onClose { _, _ in
+        webSocket.onClose = { _, _, _, _ in
             self.delegate?.disconnected()
         }
-        webSocket.onPing { _ in try webSocket.pong() }
-        webSocket.onPong { _ in try webSocket.ping() }
+        webSocket.onPing = { _, _ in try webSocket.pong() }
+        webSocket.onPong = { _, _ in try webSocket.ping() }
         self.webSocket = webSocket
     }
 }

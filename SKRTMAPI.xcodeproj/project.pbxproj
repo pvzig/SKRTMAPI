@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2604C59C202BFD83009CDBAF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */; };
+		2604C59D202BFD83009CDBAF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */; };
+		2604C59E202BFD83009CDBAF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */; };
 		26D1C4CD1EE4653600C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CA1EE4653600C95954 /* SKCore.framework */; };
 		26D1C4CE1EE4653600C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CB1EE4653600C95954 /* SKWebAPI.framework */; };
 		26D1C4CF1EE4653600C95954 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CC1EE4653600C95954 /* Starscream.framework */; };
@@ -16,18 +19,16 @@
 		26D1C4D91EE4655100C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D61EE4655100C95954 /* SKCore.framework */; };
 		26D1C4DA1EE4655100C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D71EE4655100C95954 /* SKWebAPI.framework */; };
 		26D1C4DB1EE4655100C95954 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4D81EE4655100C95954 /* Starscream.framework */; };
-		26DC0EB31E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
-		26DC0EB41E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
-		26DC0EB51E95BED900991BDF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */; };
-		26DC0EB61E95BED900991BDF /* ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* ZewoRTM.swift */; };
-		26DC0EB71E95BED900991BDF /* ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* ZewoRTM.swift */; };
-		26DC0EB81E95BED900991BDF /* ZewoRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* ZewoRTM.swift */; };
+		26DC0EB61E95BED900991BDF /* VaporEngineRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */; };
+		26DC0EB71E95BED900991BDF /* VaporEngineRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */; };
+		26DC0EB81E95BED900991BDF /* VaporEngineRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */; };
 		26DC0EB91E95BED900991BDF /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */; };
 		26DC0EBA1E95BED900991BDF /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */; };
 		26DC0EBB1E95BED900991BDF /* SKRTMAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarscreamRTM.swift; sourceTree = "<group>"; };
 		2684F17D1E95AA6900536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F1E41E95ABD400536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F2081E95ABD600536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,9 +42,9 @@
 		26D1C4D61EE4655100C95954 /* SKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKCore.framework; path = Carthage/Build/tvOS/SKCore.framework; sourceTree = "<group>"; };
 		26D1C4D71EE4655100C95954 /* SKWebAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SKWebAPI.framework; path = Carthage/Build/tvOS/SKWebAPI.framework; sourceTree = "<group>"; };
 		26D1C4D81EE4655100C95954 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/tvOS/Starscream.framework; sourceTree = "<group>"; };
-		26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarscreamRTM.swift; sourceTree = "<group>"; };
-		26DC0EB11E95BED900991BDF /* ZewoRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZewoRTM.swift; sourceTree = "<group>"; };
+		26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaporEngineRTM.swift; sourceTree = "<group>"; };
 		26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRTMAPI.swift; sourceTree = "<group>"; };
+		D2C085F12024BF9600FEC5AB /* WebSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +154,9 @@
 		26DC0EAF1E95BED900991BDF /* Conformers */ = {
 			isa = PBXGroup;
 			children = (
-				26DC0EB01E95BED900991BDF /* StarscreamRTM.swift */,
-				26DC0EB11E95BED900991BDF /* ZewoRTM.swift */,
+				2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */,
+				26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */,
+				D2C085F12024BF9600FEC5AB /* WebSocketFactory.swift */,
 			);
 			path = Conformers;
 			sourceTree = "<group>";
@@ -249,7 +251,7 @@
 		2684F1741E95AA6900536DCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Peter Zignego";
 				TargetAttributes = {
 					2684F17C1E95AA6900536DCC = {
@@ -357,8 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DC0EB61E95BED900991BDF /* ZewoRTM.swift in Sources */,
-				26DC0EB31E95BED900991BDF /* StarscreamRTM.swift in Sources */,
+				26DC0EB61E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
+				2604C59C202BFD83009CDBAF /* StarscreamRTM.swift in Sources */,
 				26DC0EB91E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,8 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DC0EB71E95BED900991BDF /* ZewoRTM.swift in Sources */,
-				26DC0EB41E95BED900991BDF /* StarscreamRTM.swift in Sources */,
+				26DC0EB71E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
+				2604C59D202BFD83009CDBAF /* StarscreamRTM.swift in Sources */,
 				26DC0EBA1E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,8 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26DC0EB81E95BED900991BDF /* ZewoRTM.swift in Sources */,
-				26DC0EB51E95BED900991BDF /* StarscreamRTM.swift in Sources */,
+				26DC0EB81E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
+				2604C59E202BFD83009CDBAF /* StarscreamRTM.swift in Sources */,
 				26DC0EBB1E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +398,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -404,7 +408,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -449,7 +457,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -457,7 +467,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -507,7 +521,7 @@
 				PRODUCT_NAME = SKRTMAPI;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -534,7 +548,7 @@
 				PRODUCT_NAME = SKRTMAPI;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -561,7 +575,7 @@
 				PRODUCT_NAME = SKRTMAPI;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -588,7 +602,7 @@
 				PRODUCT_NAME = SKRTMAPI;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -614,7 +628,7 @@
 				PRODUCT_NAME = SKRTMAPI;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
@@ -641,7 +655,7 @@
 				PRODUCT_NAME = SKRTMAPI;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;

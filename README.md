@@ -1,5 +1,5 @@
 # SKRTMAPI: SlackKit RTM Module
-![Swift Version](https://img.shields.io/badge/Swift-3.1.1-orange.svg)
+![Swift Version](https://img.shields.io/badge/Swift-4.0.3-orange.svg)
 ![Plaforms](https://img.shields.io/badge/Platforms-macOS,iOS,tvOS,Linux-lightgrey.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 [![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
@@ -21,7 +21,7 @@ pod 'SKRTMAPI'
 and run
 
 ```
-# Use CocoaPods version >= 1.1.0
+# Use CocoaPods version >= 1.4.0
 pod install
 ```
 
@@ -49,7 +49,7 @@ import PackageDescription
   
 let package = Package(
 	dependencies: [
-		.Package(url: "https://github.com/SlackKit/SKRTMAPI.git", majorVersion: 4)
+		.package(url: "https://github.com/SlackKit/SKRTMAPI.git", .upToNextMinor(from: "4.1.0"))
 	]
 )
 ```
