@@ -22,58 +22,92 @@
 // THE SOFTWARE.
 
 #if os(Linux)
-import Dispatch
 import Foundation
-import SKCore
+import Sockets
+import HTTP
+import TLS
 import URI
+import WebSockets
 
 public class VaporEngineRTM: RTMWebSocket {
-    public weak var delegate: RTMDelegate?
-    var webSocket: WebSocket?
-    let queue = DispatchQueue(label: "com.launchsoft.slackkit")
+    public var delegate: RTMDelegate?
 
-    public required init() {}
+    public required init(){}
 
-    // MARK: - RTM
+    private var websocket: WebSocket?
+
     public func connect(url: URL) {
-        queue.async {
-            do {
-                try WebSocketFactory.shared.connect(to: url.absoluteString) { (webSocket) in
-                    self.delegate?.didConnect()
-                    self.setupSocket(webSocket)
-                }
-            } catch let error {
-                print("WebSocket client could not connect: \(error)")
+
+        let headers: [HeaderKey: String] = [:]
+        let protocols: [String]? = nil
+        do {
+            let uri = try! URI(url.absoluteString)
+            if uri.scheme.isSecure {
+                let tcp = try TCPInternetSocket(
+                    scheme: "https",
+                    hostname: uri.hostname,
+                    port: uri.port ?? 443
+                )
+                let stream = try TLS.InternetSocket(tcp, TLS.Context(.client))
+                try WebSocket.background(
+                    to: uri,
+                    using: stream,
+                    protocols: protocols,
+                    headers: headers,
+                    onConnect: didConnect
+                )
+            } else {
+                let stream = try TCPInternetSocket(
+                    scheme: "http",
+                    hostname: uri.hostname,
+                    port: uri.port ?? 80
+                )
+                try WebSocket.background(
+                    to: uri,
+                    using: stream,
+                    protocols: protocols,
+                    headers: headers,
+                    onConnect: didConnect
+                )
             }
+        } catch {
+            print("Error connecting to \(url.absoluteString): \(error)")
+        }
+    }
+
+    func didConnect(websocket: WebSocket) throws -> Void {
+        self.websocket = websocket
+
+        self.delegate?.didConnect()
+
+        websocket.onText = { ws, text in
+            self.delegate?.receivedMessage(text)
+        }
+
+        websocket.onClose = { ws in
+            self.delegate?.disconnected()
+        }
+
+        websocket.onPing = { ws, data in
+            try ws.pong(data)
+        }
+
+        websocket.onPong = { ws, data in
+            try ws.ping(data)
         }
     }
 
     public func disconnect() {
-        try? webSocket?.close()
+        do {
+            try self.websocket?.close()
+        } catch {
+            print("Error disconnecting from \(self.websocket.debugDescription): \(error)")
+        }
     }
 
     public func sendMessage(_ message: String) throws {
-        guard webSocket != nil else {
-            throw SlackError.rtmConnectionError
-        }
-        do {
-            try webSocket?.send(message)
-        } catch let error {
-            throw error
-        }
-    }
-
-    // MARK: - WebSocket
-    private func setupSocket(_ webSocket: WebSocket) {
-        webSocket.onText = { _, message in
-            self.delegate?.receivedMessage(message)
-        }
-        webSocket.onClose = { _, _, _, _ in
-            self.delegate?.disconnected()
-        }
-        webSocket.onPing = { _, _ in try webSocket.pong() }
-        webSocket.onPong = { _, _ in try webSocket.ping() }
-        self.webSocket = webSocket
+        guard let websocket = websocket else { throw SlackError.rtmConnectionError }
+        try websocket.send(message)
     }
 }
 #endif

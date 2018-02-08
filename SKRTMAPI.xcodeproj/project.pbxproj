@@ -44,7 +44,6 @@
 		26D1C4D81EE4655100C95954 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/tvOS/Starscream.framework; sourceTree = "<group>"; };
 		26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VaporEngineRTM.swift; sourceTree = "<group>"; };
 		26DC0EB21E95BED900991BDF /* SKRTMAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRTMAPI.swift; sourceTree = "<group>"; };
-		D2C085F12024BF9600FEC5AB /* WebSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +155,6 @@
 			children = (
 				2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */,
 				26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */,
-				D2C085F12024BF9600FEC5AB /* WebSocketFactory.swift */,
 			);
 			path = Conformers;
 			sourceTree = "<group>";
