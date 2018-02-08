@@ -1,3 +1,4 @@
+#if os(Linux)
 import WebSockets
 import HTTP
 import Sockets
@@ -63,3 +64,4 @@ public final class WebSocketFactory {
         )
     }
 }
+#endif

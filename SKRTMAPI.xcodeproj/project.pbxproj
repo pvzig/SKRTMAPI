@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2604C59C202BFD83009CDBAF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */; };
+		2604C59D202BFD83009CDBAF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */; };
+		2604C59E202BFD83009CDBAF /* StarscreamRTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */; };
 		26D1C4CD1EE4653600C95954 /* SKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CA1EE4653600C95954 /* SKCore.framework */; };
 		26D1C4CE1EE4653600C95954 /* SKWebAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CB1EE4653600C95954 /* SKWebAPI.framework */; };
 		26D1C4CF1EE4653600C95954 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D1C4CC1EE4653600C95954 /* Starscream.framework */; };
@@ -25,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarscreamRTM.swift; sourceTree = "<group>"; };
 		2684F17D1E95AA6900536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F1E41E95ABD400536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2684F2081E95ABD600536DCC /* SKRTMAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKRTMAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +154,7 @@
 		26DC0EAF1E95BED900991BDF /* Conformers */ = {
 			isa = PBXGroup;
 			children = (
+				2604C59B202BFD83009CDBAF /* StarscreamRTM.swift */,
 				26DC0EB11E95BED900991BDF /* VaporEngineRTM.swift */,
 				D2C085F12024BF9600FEC5AB /* WebSocketFactory.swift */,
 			);
@@ -355,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DC0EB61E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
+				2604C59C202BFD83009CDBAF /* StarscreamRTM.swift in Sources */,
 				26DC0EB91E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DC0EB71E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
+				2604C59D202BFD83009CDBAF /* StarscreamRTM.swift in Sources */,
 				26DC0EBA1E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DC0EB81E95BED900991BDF /* VaporEngineRTM.swift in Sources */,
+				2604C59E202BFD83009CDBAF /* StarscreamRTM.swift in Sources */,
 				26DC0EBB1E95BED900991BDF /* SKRTMAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

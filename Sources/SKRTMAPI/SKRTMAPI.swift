@@ -62,7 +62,11 @@ public final class SKRTMAPI: RTMDelegate {
         if let rtm = rtm {
             self.rtm = rtm
         } else {
-            self.rtm = VaporEngineRTM()
+            #if os(Linux)
+                self.rtm = VaporEngineRTM()
+            #else
+                self.rtm = StarscreamRTM()
+            #endif
         }
         self.rtm.delegate = self
     }
