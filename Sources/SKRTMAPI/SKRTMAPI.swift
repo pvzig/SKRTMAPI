@@ -153,7 +153,7 @@ public final class SKRTMAPI: RTMDelegate {
             "id": id ?? Date().slackTimestamp,
             "type": "message",
             "channel": channel,
-            "text": message.slackFormatEscaping,
+            "text": message,
             "thread_ts": threadTs,
             "broadcastReply": broadcastReply
         ]
