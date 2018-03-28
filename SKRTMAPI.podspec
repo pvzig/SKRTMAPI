@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                    = "SKRTMAPI"
-  s.version                 = "4.1.1"
+  s.version                 = "4.1.2"
   s.summary                 = "A Swift library for connecting to the Slack RTM API"
   s.homepage                = "https://github.com/SlackKit/SKRTMAPI"
   s.license                 = 'MIT'
