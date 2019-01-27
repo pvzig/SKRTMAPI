@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
   s.name                    = "SKRTMAPI"
   s.version                 = "4.1.2"
   s.summary                 = "A Swift library for connecting to the Slack RTM API"
-  s.homepage                = "https://github.com/SlackKit/SKRTMAPI"
+  s.homepage                = "https://github.com/pvzig/SKRTMAPI"
   s.license                 = 'MIT'
   s.author                  = { "Peter Zignego" => "peter@launchsoft.co" }
-  s.source                  = { :git => "https://github.com/SlackKit/SKRTMAPI.git", :tag => s.version.to_s }
+  s.source                  = { :git => "https://github.com/pvzig/SKRTMAPI.git", :tag => s.version.to_s }
   s.social_media_url        = 'https://twitter.com/pvzig'
   s.ios.deployment_target   = '9.0'
   s.osx.deployment_target   = '10.11'
