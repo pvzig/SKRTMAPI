@@ -1,10 +1,4 @@
-# SKRTMAPI: SlackKit RTM Module
-![Swift Version](https://img.shields.io/badge/Swift-4.0.3-orange.svg)
-![Plaforms](https://img.shields.io/badge/Platforms-macOS,iOS,tvOS,Linux-lightgrey.svg)
-![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)
-[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
-[![CocoaPods compatible](https://img.shields.io/badge/CocoaPods-compatible-brightgreen.svg)](https://cocoapods.org)
+# SKRTMAPI has been consolidated into [SlackKit](https://www.github.com/pvzig/SlackKit)
 
 A module for connecting to the [Slack Real Time Messaging API](https://api.slack.com/rtm).
 
@@ -49,7 +43,7 @@ import PackageDescription
   
 let package = Package(
 	dependencies: [
-		.package(url: "https://github.com/SlackKit/SKRTMAPI.git", .upToNextMinor(from: "4.1.0"))
+		.package(url: "https://github.com/pvzig/SKRTMAPI.git", .upToNextMinor(from: "4.1.0"))
 	]
 )
 ```
