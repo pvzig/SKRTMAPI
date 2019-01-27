@@ -7,8 +7,8 @@ let package = Package(
         .library(name: "SKRTMAPI", targets: ["SKRTMAPI"])
     ],
     dependencies: [
-        .package(url: "https://github.com/SlackKit/SKCore", .upToNextMajor(from: "4.0.0")),
-        .package(url: "https://github.com/SlackKit/SKWebAPI", .upToNextMajor(from: "4.0.0"))
+        .package(url: "https://github.com/pvzig/SKCore", .upToNextMajor(from: "4.0.0")),
+        .package(url: "https://github.com/pvzig/SKWebAPI", .upToNextMajor(from: "4.0.0"))
     ],
     targets: []
 )
